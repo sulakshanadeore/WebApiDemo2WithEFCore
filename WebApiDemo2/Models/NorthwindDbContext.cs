@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebApiDemo2.Areas.Suppliers.Models;
 
 namespace WebApiDemo2.Models
 {
@@ -13,6 +14,8 @@ namespace WebApiDemo2.Models
         }
 
         public DbSet<CategoryModel> Categories { get; set; }
+
+        public DbSet<SuppModel> Suppliers { get; set; }
     }
 
 }
